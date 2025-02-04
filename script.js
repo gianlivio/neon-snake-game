@@ -235,8 +235,6 @@ document.addEventListener('keydown', (e) => {
    }
 });
 
-startGame();
-
 document.querySelector('.d-pad .up').addEventListener('click', () => {
     if (dy === 0) { dx = 0; dy = -1; }
 });
@@ -249,3 +247,7 @@ document.querySelector('.d-pad .left').addEventListener('click', () => {
 document.querySelector('.d-pad .right').addEventListener('click', () => {
     if (dx === 0) { dx = 1; dy = 0; }
 });
+
+
+startGame();
+
