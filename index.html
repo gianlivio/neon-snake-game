@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Neon Snake Game</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+   <title>Dev Snake Game</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="game-container">
-        <div class="power-indicator"></div>
-          <div class="screen-frame">
-             <canvas id="gameCanvas" width="600" height="600"></canvas>
-          </div>
-               
-          <div class="overlay">
-                <div id="score">Score: 0</div>
-                <div id="gameOver" class="hidden">
-                    <h2>Game Over!</h2>
-                    <p>Final Score: <span id="finalScore">0</span></p>
-                    <button onclick="startGame()">Play Again</button>
-                </div>
-          </div>
-    </div>
-    <script src="script.js"></script>
+   <div class="game-container">
+       <div class="power-indicator"></div>
+       <div class="screen-frame">
+           <canvas id="gameCanvas"></canvas>
+           <div class="overlay">
+               <div id="score">Score: 0</div>
+               <div id="coffee-counter">☕: 0</div>
+               <div id="gameOver" class="hidden">
+                   <h2>Exception: CaffeineLevelTooLow</h2>
+                   <p>Status: <span id="finalScore">0</span> cups of coffee consumed</p>
+                   <button onclick="startGame()">npm start</button>
+               </div>
+           </div>
+       </div>
+       <div class="controls">
+           <div class="d-pad">
+               <button class="up">▲</button>
+               <button class="left">◄</button>
+               <button class="right">►</button>
+               <button class="down">▼</button>
+           </div>
+           <div class="action-buttons">
+               <button class="a">A</button>
+               <button class="b">B</button>
+           </div>
+       </div>
+   </div>
+   <script src="script.js"></script>
 </body>
 </html>
