@@ -31,6 +31,18 @@ body {
    overflow: hidden;
 }
 
+.overlay {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   z-index: 10;
+   color: #00ffff;
+   text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.hidden {
+   display: none;
+}
 .screen-frame::before {
    content: "DOT MATRIX WITH STEREO SOUND";
    position: absolute;
@@ -189,4 +201,16 @@ canvas {
    0% { opacity: 0.5; box-shadow: 0 0 5px #f00; }
    50% { opacity: 1; box-shadow: 0 0 20px #f00; }
    100% { opacity: 0.5; box-shadow: 0 0 5px #f00; }
+}
+
+#gameOver {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: rgba(0, 0, 0, 0.95);
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   z-index: 20;
 }
